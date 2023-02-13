@@ -23,7 +23,7 @@ class Feedback extends Component{
         if (!total) {
             return 0;
         }
-        const result = ((good / total) * 100).toFixed(2);
+        const result = Math.round((good / total) * 100);
         return Number(result);
     }
 
